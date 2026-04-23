@@ -12,6 +12,15 @@ RiderComm is a mobile-first voice communication app for riders, with a Flutter c
 
 ### 1. Start backend
 
+From repository root:
+
+```bash
+python -m pip install -r requirements.txt
+python -m uvicorn ride_backend.server:app --app-dir backend/src --host 0.0.0.0 --port 8000 --reload
+```
+
+Or from backend directory:
+
 ```bash
 cd backend
 python -m pip install -r requirements.txt
